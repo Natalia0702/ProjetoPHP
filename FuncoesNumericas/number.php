@@ -27,7 +27,7 @@ $_meses = 5;
   //Valor Absoluto
   echo "Número absoluto" . abs(-100) . "<br>";
 
-  ////-------------Testar se o tipo de variável----------------------///////////////////
+  ////-------------Testar se o tipo de variável----------------------////////////
 
   //Testar se é numérica
   echo "O $_salario é um número? " . is_numeric($_salario) . "<br>";
@@ -50,6 +50,23 @@ $_meses = 5;
   //arredondar para baixo
   echo floor($_gasolina) . "<br>";
   echo floor($_leite) . "<br>";
+
+  ////-------------Testar Boolean ----------------------///////////////////
+  // 1 é true 
+  //"" é false
+  $_fumante = false;
+  $_feliz = true;
+  echo "é $_fumante" .  "<br>";
+  echo "é $_feliz" . "<br>";
+  echo "é $_feliz" . "<br>" . is_bool($_feliz) . "<br>";
+  ////-------------Função ISSET ----------------------///////////////////
+  $nome = "Jessica";
+  $numero = 123456;
+  $fumante = false;
+
+  echo isset($nome);
+  echo isset($numero);
+  echo isset($fumante);
   ?>
 
 
